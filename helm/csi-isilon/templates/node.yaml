@@ -60,7 +60,7 @@ spec:
     spec:
       serviceAccount: {{ .Release.Name }}-node
       hostNetwork: true
-      dnsPolicy: ClusterFirstWithHostNet
+      dnsPolicy: ClusterFirst
       containers:
         - name: driver
           command: ["/csi-isilon"]
